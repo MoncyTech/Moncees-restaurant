@@ -1,6 +1,5 @@
 
 import { Button } from "@/components/ui/button";
-import ImageCarousel from "@/components/ImageCarousel";
 
 interface HeroProps {
   scrollToContact: () => void;
@@ -38,11 +37,6 @@ const Hero = ({ scrollToContact }: HeroProps) => {
         >
           Contact Us
         </Button>
-        
-        {/* Image Carousel */}
-        <div className="mt-8 w-full max-w-4xl mx-auto fade-in delay-200">
-          <ImageCarousel interval={6000} />
-        </div>
       </div>
     </div>
   );

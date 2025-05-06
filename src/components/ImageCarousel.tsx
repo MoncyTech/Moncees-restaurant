@@ -95,14 +95,12 @@ export const ImageCarousel = ({ interval = 5000 }: ImageCarouselProps) => {
           ))}
         </CarouselContent>
         
-        <CarouselPrevious 
-          className="hidden md:flex -left-4 bg-moncees-gold/20 hover:bg-moncees-gold/40 border-moncees-gold text-white"
-          icon={<ChevronLeft className="h-4 w-4 text-white" />}
-        />
-        <CarouselNext 
-          className="hidden md:flex -right-4 bg-moncees-gold/20 hover:bg-moncees-gold/40 border-moncees-gold text-white"
-          icon={<ChevronRight className="h-4 w-4 text-white" />}
-        />
+        <CarouselPrevious className="hidden md:flex -left-4 bg-moncees-gold/20 hover:bg-moncees-gold/40 border-moncees-gold text-white">
+          <ChevronLeft className="h-4 w-4 text-white" />
+        </CarouselPrevious>
+        <CarouselNext className="hidden md:flex -right-4 bg-moncees-gold/20 hover:bg-moncees-gold/40 border-moncees-gold text-white">
+          <ChevronRight className="h-4 w-4 text-white" />
+        </CarouselNext>
       </Carousel>
     </div>
   );

@@ -2,6 +2,7 @@
 import { useRef } from "react";
 import Hero from "@/components/Hero";
 import ContactInfo from "@/components/ContactInfo";
+import ImageCarousel from "@/components/ImageCarousel";
 
 const Index = () => {
   const contactSectionRef = useRef<HTMLDivElement>(null);
@@ -52,6 +53,18 @@ const Index = () => {
               <h3 className="font-cormorant text-xl font-semibold text-moncees-gold mb-2">Beautiful Patio</h3>
               <p className="text-white/80 font-nunito">Dine in our picturesque outdoor setting surrounded by nature.</p>
             </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Image Carousel Section - Added above Contact & Hours */}
+      <section className="py-12 md:py-16 bg-gradient-to-b from-moncees-black/95 to-moncees-black">
+        <div className="max-w-5xl mx-auto text-center px-6">
+          <h2 className="font-cormorant text-3xl md:text-5xl font-bold text-moncees-gold mb-8 fade-in tracking-wide">
+            Our Experience
+          </h2>
+          <div className="fade-in delay-200">
+            <ImageCarousel interval={6000} />
           </div>
         </div>
       </section>
