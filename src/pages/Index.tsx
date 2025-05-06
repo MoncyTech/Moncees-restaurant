@@ -18,7 +18,7 @@ const Index = () => {
       {/* About Section */}
       <section className="py-16 md:py-24 px-6 bg-gradient-to-b from-moncees-black to-moncees-black/95">
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="font-playfair text-3xl md:text-5xl font-bold text-moncees-gold mb-8 fade-in">
+          <h2 className="font-cormorant text-3xl md:text-5xl font-bold text-moncees-gold mb-8 fade-in tracking-wide">
             Welcome to Moncees
           </h2>
           
@@ -29,8 +29,8 @@ const Index = () => {
                 alt="Moncees Logo" 
                 className="w-24 h-24 object-contain mx-auto mb-4"
               />
-              <h3 className="font-playfair text-xl font-semibold text-moncees-gold mb-2">Fine Dining</h3>
-              <p className="text-white/80 font-montserrat">Experience our exceptional cuisine crafted with the finest ingredients.</p>
+              <h3 className="font-cormorant text-xl font-semibold text-moncees-gold mb-2">Fine Dining</h3>
+              <p className="text-white/80 font-nunito">Experience our exceptional cuisine crafted with the finest ingredients.</p>
             </div>
             
             <div className="bg-moncees-black/70 p-6 border border-moncees-gold/30 rounded-lg fade-in delay-200">
@@ -39,8 +39,8 @@ const Index = () => {
                 alt="Beer & Wine Bar" 
                 className="w-24 h-24 object-contain mx-auto mb-4"
               />
-              <h3 className="font-playfair text-xl font-semibold text-moncees-gold mb-2">Premium Bar</h3>
-              <p className="text-white/80 font-montserrat">Enjoy our selection of craft beers, fine wines, and signature cocktails.</p>
+              <h3 className="font-cormorant text-xl font-semibold text-moncees-gold mb-2">Premium Bar</h3>
+              <p className="text-white/80 font-nunito">Enjoy our selection of craft beers, fine wines, and signature cocktails.</p>
             </div>
             
             <div className="bg-moncees-black/70 p-6 border border-moncees-gold/30 rounded-lg fade-in delay-300">
@@ -49,8 +49,8 @@ const Index = () => {
                 alt="Restaurant Patio" 
                 className="w-24 h-24 object-cover object-center mx-auto mb-4 rounded-full"
               />
-              <h3 className="font-playfair text-xl font-semibold text-moncees-gold mb-2">Beautiful Patio</h3>
-              <p className="text-white/80 font-montserrat">Dine in our picturesque outdoor setting surrounded by nature.</p>
+              <h3 className="font-cormorant text-xl font-semibold text-moncees-gold mb-2">Beautiful Patio</h3>
+              <p className="text-white/80 font-nunito">Dine in our picturesque outdoor setting surrounded by nature.</p>
             </div>
           </div>
         </div>
@@ -59,13 +59,13 @@ const Index = () => {
       {/* Contact Section */}
       <section ref={contactSectionRef} className="py-16 md:py-24 px-6 bg-gradient-to-b from-moncees-black/95 to-moncees-black">
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="font-playfair text-3xl md:text-5xl font-bold text-moncees-gold mb-8 fade-in">
+          <h2 className="font-cormorant text-3xl md:text-5xl font-bold text-moncees-gold mb-8 fade-in tracking-wide">
             Contact & Hours
           </h2>
           
           <ContactInfo />
           
-          <div className="mt-16 text-moncees-white/80 font-montserrat text-sm fade-in delay-400">
+          <div className="mt-16 text-moncees-white/80 font-nunito text-sm fade-in delay-400">
             <p>© {new Date().getFullYear()} Moncees Restaurant & Bar. All rights reserved.</p>
           </div>
         </div>

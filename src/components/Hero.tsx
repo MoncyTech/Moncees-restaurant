@@ -25,15 +25,15 @@ const Hero = ({ scrollToContact }: HeroProps) => {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-moncees-gold/20 to-transparent opacity-70 rounded-full" style={{ mixBlendMode: "overlay" }}></div>
         </div>
-        <h1 className="font-playfair text-5xl md:text-7xl font-bold text-moncees-gold mb-4">
+        <h1 className="font-cormorant text-5xl md:text-7xl font-bold text-moncees-gold mb-4 tracking-wide">
           Fine Dining & Bar
         </h1>
-        <p className="font-montserrat text-lg md:text-xl text-white mb-8 max-w-2xl mx-auto">
+        <p className="font-nunito text-lg md:text-xl text-white mb-8 max-w-2xl mx-auto tracking-wide">
           Experience the perfect blend of exquisite cuisine and premium beverages in an elegant atmosphere
         </p>
         <Button 
           onClick={scrollToContact}
-          className="bg-moncees-gold text-moncees-black hover:bg-moncees-gold/90 font-montserrat font-medium px-8 py-6 text-lg"
+          className="bg-moncees-gold text-moncees-black hover:bg-moncees-gold/90 font-nunito font-medium px-8 py-6 text-lg"
         >
           Contact Us
         </Button>

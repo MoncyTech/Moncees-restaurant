@@ -104,8 +104,8 @@ export default {
 				'fade-in': 'fadeIn 1s ease-in forwards'
 			},
 			fontFamily: {
-				'playfair': ['"Playfair Display"', 'serif'],
-				'montserrat': ['Montserrat', 'sans-serif'],
+				'cormorant': ['"Cormorant Garamond"', 'serif'],
+				'nunito': ['"Nunito Sans"', 'sans-serif'],
 			},
 			backgroundImage: {
 				'restaurant-patio': "url('/lovable-uploads/fa164508-1454-4837-991a-3d1af7d093c2.png')"
