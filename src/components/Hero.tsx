@@ -1,5 +1,6 @@
 
 import { Button } from "@/components/ui/button";
+import ImageCarousel from "@/components/ImageCarousel";
 
 interface HeroProps {
   scrollToContact: () => void;
@@ -7,12 +8,12 @@ interface HeroProps {
 
 const Hero = ({ scrollToContact }: HeroProps) => {
   return (
-    <div className="relative h-screen bg-moncees-black flex items-center justify-center overflow-hidden">
+    <div className="relative min-h-screen bg-moncees-black flex flex-col items-center justify-center overflow-hidden">
       {/* Background image with overlay */}
       <div className="absolute inset-0 bg-restaurant-patio bg-cover bg-center opacity-40"></div>
       
       {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-5xl mx-auto fade-in">
+      <div className="relative z-10 text-center px-4 max-w-5xl mx-auto fade-in pt-20">
         <div className="relative mx-auto w-52 md:w-64 mb-8">
           <img 
             src="/lovable-uploads/92782904-c05b-4a5f-a65d-7e4b81e32c35.png" 
@@ -33,10 +34,15 @@ const Hero = ({ scrollToContact }: HeroProps) => {
         </p>
         <Button 
           onClick={scrollToContact}
-          className="bg-moncees-gold text-moncees-black hover:bg-moncees-gold/90 font-nunito font-medium px-8 py-6 text-lg"
+          className="bg-moncees-gold text-moncees-black hover:bg-moncees-gold/90 font-nunito font-medium px-8 py-6 text-lg mb-16"
         >
           Contact Us
         </Button>
+        
+        {/* Image Carousel */}
+        <div className="mt-8 w-full max-w-4xl mx-auto fade-in delay-200">
+          <ImageCarousel interval={6000} />
+        </div>
       </div>
     </div>
   );
