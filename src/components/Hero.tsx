@@ -30,8 +30,8 @@ const Hero = ({ scrollToContact }: HeroProps) => {
           Fine Dining & Bar
         </h1>
         <p className="font-nunito text-lg md:text-xl text-white mb-8 max-w-2xl mx-auto tracking-wide">
-          Experience the perfect blend of exquisite cuisine and premium
-          beverages in an elegant atmosphere
+          Experience the perfect blend of premium beverages and vibrant events
+          in an elegant bar atmosphere
         </p>
         <Button
           onClick={scrollToContact}
