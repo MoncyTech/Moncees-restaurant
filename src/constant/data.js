@@ -17,7 +17,7 @@ export const contactData = [
   },
   {
     icon: "Clock",
-    title: "Hours",
+    title: "Open hours",
     value: [
       "Mon-Thu: 1:00PM - 9:00PM",
       "Fri-Sat: 1:00PM - 11:00PM",
