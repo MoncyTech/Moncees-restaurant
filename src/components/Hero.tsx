@@ -8,7 +8,7 @@ const Hero = ({ scrollToContact }: HeroProps) => {
   return (
     <div className="relative flex min-h-screen bg-moncees-black flex-col items-center justify-center overflow-hidden">
       {/* Grand opening banner image at the top */}
-      <div className="absolute w-60 max-h-40 z-50  top-0">
+      <div className="absolute w-52 md:w-60  max-h-40 z-50  top-0">
         <img
           src="/lovable-uploads/banner_grand_opening.png"
           alt="Moncees Restaurant & Bar"
@@ -16,13 +16,11 @@ const Hero = ({ scrollToContact }: HeroProps) => {
         />
       </div>
       <br />
-      <br />
       {/* Background image with overlay */}
       <div className="absolute inset-0 bg-restaurant-patio bg-cover bg-center opacity-40"></div>
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-5xl mx-auto fade-in pt-20">
         <div className="relative mx-auto w-52 md:w-64 mb-8 flex">
-          <br />
           <img
             src="/lovable-uploads/6d299d89-136d-4871-88d6-5ad24dd41992.png"
             alt="Moncees Restaurant & Bar"
@@ -31,10 +29,10 @@ const Hero = ({ scrollToContact }: HeroProps) => {
               mixBlendMode: "screen",
             }}
           />
-          <div
+          {/* <div
             className="absolute inset-0 bg-gradient-to-t from-moncees-gold/20 to-transparent opacity-70 rounded-full"
             style={{ mixBlendMode: "overlay" }}
-          ></div>
+          ></div> */}
         </div>
         <h1 className="font-cormorant text-4xl md:text-7xl font-bold text-moncees-gold mb-4 tracking-wide">
         Book your events and private parties.
