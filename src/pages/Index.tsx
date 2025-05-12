@@ -23,9 +23,9 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
             <div className="bg-moncees-black/70 p-6 border border-moncees-gold/30 rounded-lg fade-in delay-100">
               <img
-                src="/lovable-uploads/0ee809cc-c08a-4257-82ea-57d85e5d08b2.png"
+                src="/photos/photo_7_2025-05-10_01-51-34.jpg"
                 alt="Moncees Logo"
-                className="w-24 h-24 object-contain mx-auto mb-4"
+                className="w-30 h-30 object-contain mx-auto mb-4"
               />
               <h3 className="font-cormorant text-xl font-semibold text-moncees-gold mb-2">
                 Fine Dining
@@ -38,9 +38,9 @@ const Index = () => {
 
             <div className="bg-moncees-black/70 p-6 border border-moncees-gold/30 rounded-lg fade-in delay-200">
               <img
-                src="/lovable-uploads/6d299d89-136d-4871-88d6-5ad24dd41992.png"
-                alt="Beer & Wine Bar"
-                className="w-24 h-24 object-contain mx-auto mb-4"
+                src="/photos/photo_21_2025-05-10_01-51-34.jpg"
+                alt="Moncees Logo"
+                className="w-30 h-30 object-contain mx-auto mb-4"
               />
               <h3 className="font-cormorant text-xl font-semibold text-moncees-gold mb-2">
                 Premium Bar
@@ -53,9 +53,9 @@ const Index = () => {
 
             <div className="bg-moncees-black/70 p-6 border border-moncees-gold/30 rounded-lg fade-in delay-300">
               <img
-                src="/lovable-uploads/fa164508-1454-4837-991a-3d1af7d093c2.png"
-                alt="Restaurant Patio"
-                className="w-24 h-24 object-cover object-center mx-auto mb-4 rounded-full"
+                src="/photos/photo_21_2025-05-10_01-51-34.jpg"
+                alt="Moncees Logo"
+                className="w-30 h-30 object-contain mx-auto mb-4"
               />
               <h3 className="font-cormorant text-xl font-semibold text-moncees-gold mb-2">
                 Beautiful Patio

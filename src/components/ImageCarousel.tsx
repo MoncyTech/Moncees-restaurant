@@ -1,6 +1,5 @@
-
 import { useEffect, useState } from "react";
-import { 
+import {
   Carousel,
   CarouselContent,
   CarouselItem,
@@ -10,22 +9,31 @@ import {
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
+const images = import.meta.glob("/public/photos/*.{png,jpg,jpeg}", {
+  eager: true,
+  import: "default",
+});
 // Array of images to display in the carousel
-const carouselImages = [
-  {
-    url: "/lovable-uploads/fa164508-1454-4837-991a-3d1af7d093c2.png",
-    alt: "Restaurant Patio"
-  },
-  {
-    url: "/lovable-uploads/0ee809cc-c08a-4257-82ea-57d85e5d08b2.png",
-    alt: "Moncees Logo"
-  },
-  {
-    url: "/lovable-uploads/6d299d89-136d-4871-88d6-5ad24dd41992.png",
-    alt: "Premium Bar"
-  }
-];
-
+// const carouselImages = [
+//   {
+//     url: "/lovable-uploads/fa164508-1454-4837-991a-3d1af7d093c2.png",
+//     alt: "Restaurant Patio",
+//   },
+//   {
+//     url: "/lovable-uploads/0ee809cc-c08a-4257-82ea-57d85e5d08b2.png",
+//     alt: "Moncees Logo",
+//   },
+//   {
+//     url: "/lovable-uploads/6d299d89-136d-4871-88d6-5ad24dd41992.png",
+//     alt: "Premium Bar",
+//   },
+// ];
+const carouselImages = Object.keys(images).map((path) => {
+  return {
+    url: path.replace("/public", ""), // Vite requires this for public files
+    alt: ""//path.split("/").pop()?.split(".")[0].replace(/[-_]/g, " ") || "Image",
+  };
+});
 interface ImageCarouselProps {
   interval?: number; // Time in milliseconds between auto-rotations
 }
@@ -36,19 +44,19 @@ export const ImageCarousel = ({ interval = 5000 }: ImageCarouselProps) => {
   // Auto-rotate carousel
   useEffect(() => {
     const timer = setInterval(() => {
-      setActiveIndex((current) => 
+      setActiveIndex((current) =>
         current === carouselImages.length - 1 ? 0 : current + 1
       );
     }, interval);
-    
+
     return () => clearInterval(timer);
   }, [interval]);
 
   return (
     <div className="w-full max-w-5xl mx-auto">
-      <Carousel 
-        className="w-full" 
-        opts={{ 
+      <Carousel
+        className="w-full"
+        opts={{
           align: "start",
           loop: true,
         }}
@@ -62,7 +70,10 @@ export const ImageCarousel = ({ interval = 5000 }: ImageCarouselProps) => {
           {carouselImages.map((image, index) => (
             <CarouselItem key={index} className="md:basis-full">
               <div className="p-1 relative group">
-                <AspectRatio ratio={16 / 9} className="overflow-hidden rounded-lg bg-moncees-black">
+                <AspectRatio
+                  ratio={16 / 9}
+                  className="overflow-hidden rounded-lg bg-moncees-black"
+                >
                   <div className="absolute inset-0 bg-gradient-to-b from-moncees-black/40 to-moncees-black/70 z-10"></div>
                   <img
                     src={image.url}
@@ -75,15 +86,15 @@ export const ImageCarousel = ({ interval = 5000 }: ImageCarouselProps) => {
                     </h3>
                   </div>
                 </AspectRatio>
-                
+
                 <div className="absolute bottom-4 right-4 z-30 flex gap-2">
                   {carouselImages.map((_, idx) => (
                     <button
                       key={idx}
                       onClick={() => setActiveIndex(idx)}
                       className={`w-2 h-2 rounded-full transition-all ${
-                        idx === activeIndex 
-                          ? "bg-moncees-gold w-4" 
+                        idx === activeIndex
+                          ? "bg-moncees-gold w-4"
                           : "bg-white/50 hover:bg-white"
                       }`}
                       aria-label={`Go to slide ${idx + 1}`}
@@ -94,7 +105,7 @@ export const ImageCarousel = ({ interval = 5000 }: ImageCarouselProps) => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        
+
         <CarouselPrevious className="hidden md:flex -left-4 bg-moncees-gold/20 hover:bg-moncees-gold/40 border-moncees-gold text-white">
           <ChevronLeft className="h-4 w-4 text-white" />
         </CarouselPrevious>
