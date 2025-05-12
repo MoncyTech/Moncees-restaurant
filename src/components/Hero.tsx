@@ -15,6 +15,8 @@ const Hero = ({ scrollToContact }: HeroProps) => {
           className=" w-full h-full  object-fill"
         />
       </div>
+      <br />
+      <br />
       {/* Background image with overlay */}
       <div className="absolute inset-0 bg-restaurant-patio bg-cover bg-center opacity-40"></div>
       {/* Content */}
@@ -34,8 +36,8 @@ const Hero = ({ scrollToContact }: HeroProps) => {
             style={{ mixBlendMode: "overlay" }}
           ></div>
         </div>
-        <h1 className="font-cormorant text-5xl md:text-7xl font-bold text-moncees-gold mb-4 tracking-wide">
-          Fine Dining & Bar
+        <h1 className="font-cormorant text-4xl md:text-7xl font-bold text-moncees-gold mb-4 tracking-wide">
+        Book your events and private parties.
         </h1>
         <p className="font-nunito text-lg md:text-xl text-white mb-8 max-w-2xl mx-auto tracking-wide">
           Experience the perfect blend of premium beverages and vibrant events
