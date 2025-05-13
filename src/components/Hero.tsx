@@ -8,19 +8,18 @@ const Hero = ({ scrollToContact }: HeroProps) => {
   return (
     <div className="relative flex min-h-screen bg-moncees-black flex-col items-center justify-center overflow-hidden">
       {/* Grand opening banner image at the top */}
-      <div className="absolute w-52 md:w-60  max-h-40 z-50  top-0">
+      <div className="absolute w-full md:w-1/2 lg:md:w-1/4  max-h-40 z-50  top-0">
         <img
           src="/lovable-uploads/banner_grand_opening.png"
           alt="Moncees Restaurant & Bar"
           className=" w-full h-full  object-fill"
         />
       </div>
-      <br />
       {/* Background image with overlay */}
       <div className="absolute inset-0 bg-restaurant-patio bg-cover bg-center opacity-40"></div>
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-5xl mx-auto fade-in pt-20">
-        <div className="relative mx-auto w-52 md:w-64 mb-8 flex">
+        <div className="relative md:mt-32 mx-auto w-52 md:w-64 mb-8 flex">
           <img
             src="/lovable-uploads/6d299d89-136d-4871-88d6-5ad24dd41992.png"
             alt="Moncees Restaurant & Bar"

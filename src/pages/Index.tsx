@@ -97,7 +97,7 @@ const Index = () => {
       >
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="font-cormorant text-3xl md:text-5xl font-bold text-moncees-gold mb-8 fade-in tracking-wide">
-            Contact & Open Hours
+            Contact & Opening Hours
           </h2>
 
           <ContactInfo />
