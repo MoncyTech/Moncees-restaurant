@@ -16,7 +16,7 @@ export const contactData = [
     value: "95 Mair Street, Ballarat East",
   },
   {
-    icon: "Clock",
+    icon: "Clock",  
     title: "Opening hours",
     value: [
       "Mon-Thu: 1:00PM - 9:00PM",
